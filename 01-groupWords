@@ -1,0 +1,8 @@
+function groupWords(arr){
+    let grouped = [];
+    for(let i = 0; i < arr.length; i++){
+       let a = arr[i].join('');
+    grouped.push(a);
+    }
+return grouped;
+}
