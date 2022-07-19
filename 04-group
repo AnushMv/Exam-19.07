@@ -1,0 +1,20 @@
+function groupe(arr, prop){
+    let obj = {};
+    let property;
+    if(prop === 'country'){
+        property = arr[i].country;
+    }else if(prop === 'name'){
+        property = arr[i].name;
+    }else if(prop === 'job'){
+        property = arr[i].job;
+    }
+    for(let i = 0; i < arr.length; i++){
+        let prop = arr[i].prop;
+        if(obj[prop] === undefined){
+            obj[prop] = [arr[i]];
+        } else{
+            obj[prop].push(arr[i])
+        }
+    }
+    return obj;
+}
