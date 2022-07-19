@@ -1,0 +1,6 @@
+function reverse(str){
+    let arr = str.split('.');
+    arr.reverse();
+    let newStr = arr.join('');
+    return newStr;
+}
