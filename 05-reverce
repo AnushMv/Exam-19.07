@@ -1,21 +1,6 @@
-function groupe(arr, prop){
-    let obj = {};
-    let property;
-    for(let i = 0; i < arr.length; i++){
-        if(prop === 'country'){
-        property = arr[i].country;
-    }else if(prop === 'name'){
-        property = arr[i].name;
-    }else if(prop === 'job'){
-        property = arr[i].job;
-    } else{
-            console.log('put valid prop');
-    }
-        if(obj[property] === undefined){
-            obj[property] = [arr[i]];
-        } else{
-            obj[property].push(arr[i])
-        }
-    }
-    return obj;
+function reverse(str){
+    let a = str.split('.');
+    a.reverse();
+    let b = a.join('');
+    return b;
 }
